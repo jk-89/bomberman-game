@@ -1,10 +1,10 @@
 # Bomberman Game
 
-A multithreaded, multiplayer C++ Bomberman game using TCP and UDP protocols. The repository contains both client and server files, utilizing the low-level [Asio](https://think-async.com/Asio/) library for socket management and data transfer between the server, client, and GUI.
+A multithreaded, multiplayer C++ Bomberman that uses both TCP and UDP protocols. The repository includes files for the client, server, and GUI, utilizing the low-level [Asio](https://think-async.com/Asio/) library to handle socket management and data transfer across these components.
 
-In the GUI, users input commands that are parsed on the client side and then sent to the server. The client listens for server messages via TCP, updates the game map accordingly, and sends this data to the GUI via UDP, where it is displayed for the user.
+In the GUI, users enter commands, which are then parsed on the client side and sent to the server. The client listens for messages from the server via TCP, updates the game map accordingly, and sends this data to the GUI via UDP, where it is displayed for the user.
 
-The server continuously listens for clients and allows them to join the game either as players or observers.
+The server continuously listens for connections and allows users to join the game as either players or observers.
 
 I implemented the client and server components, while the GUI was developed by [@agluszak](https://github.com/agluszak).
 
